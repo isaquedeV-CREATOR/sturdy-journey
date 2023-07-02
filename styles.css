@@ -1,0 +1,205 @@
+/* div TOPO */
+#topo {
+    padding: 5px;
+    margin: 0px auto 10px auto;
+    grid-gap: 5px;
+    border-radius: 10px;
+    background-color: orange;
+    color: black;
+    justify-content: space-between;
+}
+
+#logo h1 {
+    font-family: chiller;
+    text-align: center;
+    font-size: 70px;
+    color: black;
+    line-height: 0px;
+    word-spacing: 0px;
+}
+
+#logo h4 {
+    font-family: chiller;
+    font-size: 25px;
+    text-align: center;
+    color: black;
+    line-height: 0px;
+    word-spacing: 20px;
+}
+
+#logo h3 {
+    font-family: chiller;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    line-height: 0px;
+    word-spacing: 20px;
+}
+
+#menu ul {
+    font-family: chiller;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    background-color: orange;
+    list-style: none;
+    border-radius: 10px;
+    margin: 0px auto 10px auto;
+    grid-gap: 5px;
+    background-color: orange;
+    color: black;
+    /* remove os pontinhos antes dos itens */
+
+}
+
+#menu ul li {
+    display: inline;
+    /* alinha os itens na horizontal */
+}
+
+#menu ul li a {
+    padding: 2px 10px;
+    display: inline-block;
+    margin-left: 15px;
+    background-color: orange;
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid orange;
+    /* remove o sublinhado do link */
+}
+
+#menu ul li a:hover {
+    /* efeito para quando passar o mouse 
+       sobre o item do menu */
+    color: #f5f5f5;
+    border-bottom: 3px solid #f5f5f5;
+}
+
+footer {
+    padding: 5px;
+    margin-top: 30%;
+    background-color: orange;
+    list-style: none;
+    border-radius: 10px;
+    margin: 0px auto 10px auto;
+    grid-gap: 5px;
+    background-color: orange;
+    color: black;
+
+}
+
+footer p {
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    line-height: 0px;
+
+
+}
+
+
+h1 {
+    color: #ffffff;
+}
+
+h4 {
+    color: #ffffff;
+}
+
+p {
+    color: #ffffff;
+}
+
+#principal {
+    margin: 0 0;
+    font-family: arial;
+    background-image: url(imagens/carroorange.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 538px;
+
+}
+
+#principal2 {
+    margin: 0px auto auto auto;
+    font-family: arial;
+    background-color: black;
+}
+
+#principal3 {
+    margin: 0 0;
+    font-family: arial;
+    background-color: white;
+
+}
+
+table,
+td {
+    color: black;
+
+}
+
+body {
+    background-repeat: no-repeat;
+}
+
+figure {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.efeito {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.efeito:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.efeito1 {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.efeito1:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+    filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, .5));
+}
+
+.efeito2 {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.efeito2:hover {
+    -webkit-filter: drop-shadow(15px 10px 5px white);
+    filter: drop-shadow(15px 10px 5px white);
+}
+
+.efeito3 {
+    transition: all .5s;
+
+}
+
+.efeito3:hover {
+    border: 10px solid orange;
+    border-radius: 50%;
+    -webkit-filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, .5));
+    filter: drop-shadow(15px 7px 1px rgba(0, 0, 0, .5));
+    -webkit-transform: rotateZ(-360deg) scale(1.5);
+    transform: rotateZ(-360deg) scale(1.5);
+}
+
+.efeito4 {
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.efeito4:hover {
+    opacity: 0.5;
+}

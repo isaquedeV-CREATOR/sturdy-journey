@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Financiamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body bgcolor="black">
+    <div id="principal2">
+        <div id="topo">
+            <div id="logo">
+                <h1> Furiosos e Velozes </h1>
+                <h4> Compra e venda de Carros </h4>
+            </div>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li> <a href="tabelaCarros.html">Carros</a></li>
+                <li> <a href="tabelaMarcas.html">Marcas</a></li>
+                <li> <a href="cadastro.html">Cadastro</a></li>
+                <li> <a href="listas.html">Contatos</a></li>
+                <li> <a href="Documentacao.html">Documentação</a></li>
+                <li> <a href="calculadora.html">Financiamento</a></li>
+            </ul>
+        </nav>
+
+        <div id="topo">
+            <div id="logo">
+                <h1> Calculadora de Financiamento Simples </h1>
+            </div>
+        </div>
+        <center>
+            <table>
+                <tr>
+                    <td align="center" bgcolor="#F7BE81">
+                        <center>
+
+                            <h2>Simulador de financiamento</h2>
+
+                            <table border="2">
+
+                                <tr>
+                                    <td>
+                                        <form action="" method="post" name="formFinanciamento">
+
+                                            Valor financiamento: R$<input type="text" id="valorFin" name="valorFin"><br>
+
+                                            Taxa de juros: R$ <input type="text" id="taxa" name="taxa"><br>
+
+                                            Quantidade de parcelas: <input type="text" id="meses" name="meses"><br><br>
+
+                                            <center>
+
+                                                <button type="button" onclick="calcular()">Calcular</button>
+                                                <input type="reset" name="Reset" id="reset"
+                                                    value="Limpar Campos"><br><br>
+
+                                            </center>
+
+                                            Valor total dos juros: R$<input type="text" id="juros" name="juros"><br>
+
+                                            Total a ser pago: R$<input type="text" id="total" name="total"><br>
+
+                                        </form>
+
+                                    </td>
+
+                                </tr>
+
+                            </table>
+
+                            <script type="text/javascript">
+                                function calcular() {
+
+                                    var valorFin = document.formFinanciamento.valorFin.value;
+                                    var taxa = document.formFinanciamento.taxa.value;
+                                    var meses = document.formFinanciamento.meses.value;
+
+                                    var juros = valorFin * (taxa / 100) * meses;
+                                    var total = parseInt(valorFin) + parseInt(juros);
+
+                                    document.formFinanciamento.juros.value = juros;
+                                    document.formFinanciamento.total.value = total;
+
+                                }
+
+                            </script>
+
+                            <br>
+                            <br>
+                        </center>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </div>
+    <br>
+
+    <footer>
+        <p>Membros: André Silva (ADS) - Carlos Eduardo (ADS) - Felipe Barreto (CD) - Isaque Cardoso (ADS)</p>
+    </footer>
+    </div>
+
+</body>
+
+</html>
